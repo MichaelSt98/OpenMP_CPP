@@ -1,5 +1,5 @@
 #Compiler/Linker
-CXX         := g++
+CXX         := /usr/local/cuda-10.0/bin/nvcc #g++
 
 #Target binary
 TARGET      := runner
@@ -15,14 +15,14 @@ TESTDIR     := ./test
 DOCDIR      := ./doc
 DOCUMENTSDIR:= ./documents
 
-SRCEXT      := cpp
+SRCEXT      := cu
 DEPEXT      := d
 OBJEXT      := o
 
 #Flags, Libraries and Includes
-CXXFLAGS    += -std=c++17 #-Wno-conversion -g3 #-std=c++17 -O3 -Wall -pedantic -Wno-vla-extension -I/usr/local/include/ -I/usr/local/include/eigen3/ -I./include -I./src
-LFLAGS      := -std=c++17 #-O3 -Wall -Wno-deprecated -Werror -pedantic -L/usr/local/lib/
-LIB         := -Xpreprocessor -fopenmp -lomp
+CXXFLAGS    += #-std=c++17 #-Wno-conversion -g3 #-std=c++17 -O3 -Wall -pedantic -Wno-vla-extension -I/usr/local/include/ -I/usr/local/include/eigen3/ -I./include -I./src
+LFLAGS      := #-std=c++17 #-O3 -Wall -Wno-deprecated -Werror -pedantic -L/usr/local/lib/
+LIB         := #-Xpreprocessor -fopenmp -lomp
 INC         := -I$(INCDIR) #-I/usr/local/include
 INCDEP      := -I$(INCDIR)
 
