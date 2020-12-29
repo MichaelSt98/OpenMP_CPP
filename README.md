@@ -2,9 +2,15 @@
 
 ![OpenMP logo](resources/OpenMP_logo.png)
 
+*Note: pictures from [Wikipedia](https://en.wikipedia.org/wiki/OpenMP)* 
+
+
 **Exploring OpenMP usage with (modern) C++.**
 
-The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) supports multi-platform shared-memory multiprocessing programming in C, C++, and Fortran. It consists of a set of **compiler directives**, **library routines**, and **environment variables** that influence run-time behavior.
+The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) supports multi-platform shared-memory 
+multiprocessing programming in C, C++, and Fortran. It consists of a set of 
+**compiler directives**, **library routines**, and **environment variables** that 
+influence run-time behavior.
 
 ## Links
 
@@ -31,7 +37,12 @@ The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) s
 
 ## OpenMP
 
-OpenMP (**Open Multi-Processing** as a Shared-Memory Parallel Programming Model) is the de-facto standard for shared-memory parallelization, thus for multicore systems. OpenMP programs start with one thread (the Master) and Worker threads are spawned at Parallel Regions together with the Master forming a Team of threads. In between Parallel Regions Worker threads are put to sleep.
+OpenMP (**Open Multi-Processing** as a Shared-Memory Parallel Programming Model) is the de-facto standard 
+for shared-memory parallelization, thus for multicore systems. OpenMP programs start with one thread (the Master) and 
+Worker threads are spawned at Parallel Regions together with the Master forming a Team of threads. 
+In between Parallel Regions Worker threads are put to sleep.
+
+![Fork join](resources/ForkJoin.png)
 
 ### Programming model
 
@@ -54,3 +65,5 @@ Components of OpenMP embraces:
 work among threads
 * **Runtime Library Routines** are used to set and query number of threads, query threads unique identifier and the thread pool size
 * **Environment Variables** are used to control execution of parallel code at run-time, thus for setting the number of threads, specifying how loop iterations are divided and enabling/disabling dynamic threads
+
+![Language Extensions](resources/OpenMPlanguageExtensions.png)
