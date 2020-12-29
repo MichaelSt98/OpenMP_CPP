@@ -4,6 +4,7 @@
 
 #include "../include/hello_world.h"
 #include "../include/Basics.h"
+#include "../include/RuntimeLibraryRoutines.h"
 
 int main() {
 
@@ -34,6 +35,20 @@ int main() {
     std::cout << std::endl;
     std::cout << "CALLING: simd_construct() from Basics.cpp ..." << std::endl;
     simd_construct();
+
+
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << "CALLING: monitor_influence_threads_routines() from RuntimeLibraryRoutines.cpp ..." << std::endl;
+    monitor_influence_threads_routines(1);
+
+    std::cout << std::endl;
+    std::cout << "CALLING: lock_routines() from RuntimeLibraryRoutines.cpp ..." << std::endl;
+    lock_routines(1);
+
+    std::cout << std::endl;
+    std::cout << "CALLING: lock_routines() from RuntimeLibraryRoutines.cpp ..." << std::endl;
+    timing_routines(1);
 
     return 0;
 }

@@ -1,5 +1,7 @@
 # OpenMP_CPP
 
+![OpenMP logo](resources/OpenMP_logo.png)
+
 **Exploring OpenMP usage with (modern) C++.**
 
 The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) supports multi-platform shared-memory multiprocessing programming in C, C++, and Fortran. It consists of a set of **compiler directives**, **library routines**, and **environment variables** that influence run-time behavior.
@@ -7,6 +9,7 @@ The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) s
 ## Links
 
 * [OpenMP 4.0](https://www.openmp.org//wp-content/uploads/OpenMP4.0.0.pdf)
+* [OpenMP C/C++ Cheatsheet](https://www.openmp.org/wp-content/uploads/OpenMP-4.5-1115-CPP-web.pdf)
 * [OpenMP C++](https://www.openmp.org/wp-content/uploads/OpenMP-4.5-1115-CPP-web.pdf)
 * [OpenMP Tutorial](https://computing.llnl.gov/tutorials/openMP/)
 * [Compiler support C++](https://www.openmp.org//resources/openmp-compilers-tools/)
@@ -17,7 +20,13 @@ The [OpenMP (Open Multi-Processing) API](https://en.wikipedia.org/wiki/OpenMP) s
 ### Content
 
 * **src/hello_world.cpp**: simple hello_world example function using OpenMP
-* ...
+* **src/Basics.cpp**: basic examples for parallel (for), sections, simd constructs
+* **src/RuntimeLibraryRoutines.cpp**: Runtime library routines 
+
+### Examples
+
+* See [OpenMP examples 4.5.0 (PDF)](resources/openmp-examples-4.5.0.pdf) 
+    * alternatively: [weblink](https://www.openmp.org//wp-content/uploads/openmp-examples-4.5.0.pdf)
 
 
 ## OpenMP
